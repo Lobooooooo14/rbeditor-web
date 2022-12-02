@@ -1,2 +1,2 @@
 # rbeditor-web
-https://rbeditor.herokuapp.com/
+~~https://rbeditor.herokuapp.com/~~

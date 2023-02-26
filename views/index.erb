@@ -2,31 +2,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel=stylesheet href=style.css
+    <link rel=stylesheet href=style.css>
   </head>
 
-    <center>
-      <div class="vaiAparecerQuandoOsiteCarregar">
-        <form action="/run" method="post">
-          <div class="container">
-
-          <textarea name="code"><%= code %></textarea>
-
-          <br>
-          <br>
-
-          <button type="submit">Run</button>
-          <br>
-
-    </center>
-
-          <p>output:</p>
-          <hr>
-
-          <center><p><%= output %></p></center>
-
-        </div>
-    </div>
-
-  
+<div class="content">
+  <div class="vaiAparecerQuandoOsiteCarregar">
+    <form action="/run" method="post">
+      <div class="container">
+        <textarea name="code"><%= code %></textarea>
+        <button type="submit">Run</button>
+      </div>
+    </form>
+    <p><b>output:</b></p>
+    <hr>
+    <p><%= output %></p>
+  </div>
+</div>
 </html>

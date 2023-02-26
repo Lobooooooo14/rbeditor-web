@@ -1,57 +1,77 @@
-body{
-  background-color: #252525;
-  padding: 0;
+@keyframes fadein {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }
 
+html, body {
+  padding: 0;
+  margin: 0;
+}
 
-.vaiAparecerQuandoOsiteCarregar{
-  color:white;
-  animation: fadein 2s;
+body {
+  background-color: #171a1b;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  background-color: rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.vaiAparecerQuandoOsiteCarregar {
+  color: white;
+  animation: fadein 1s;
   animation-iteration-count: 1;
 }
 
-@keyframes fadein{
-  0%{
-    opacity: 0;
-  }
-  100%{
-    opacity:1;
-  }
+textarea {
+  height: 200px;
+  width: 100%;
+  font-size: 12pt;
+  color: rgb(255 255 255 / 80%);
+  background-color: rgb(0 0 0 / 20%);
+  outline: none;
+  border: solid 1px rgb(0 0 0 / 40%);
+  border-radius: 10px;
+  padding: 10px;
+  resize: none;
+  font-family: monospace;
+  margin-bottom: 20px;
 }
 
-textarea{
-  height: 150px;
-  width: 300px;
-  font-size: 15px;
-  color: white;
-  background-color: transparent;
-  outline:none;
-  border: 1px solid yellow;
-  border-radius: 3px
-}
-
-button{
-  height:40px;
-  width: 100px;
-  border: 1px solid yellow;
-  border-radius: 3px;
-  background-color: #353535;
+button {
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(255 255 255 / 20%);
   transition: all 0.2s;
-  color: white;
+  color: rgb(255 255 255 / 80%);
 }
 
-button:hover,
-focus{
-  background: #454545;
-  height:41px;
-  width:101px;
+button:hover, focus {
+  background: #f44336;
 }
 
-p{
-  color: white;
+p {
+  color: rgb(255 255 255 / 80%);
+  font-family: monospace;
+  margin: 0;
+  line-break: anywhere;
 }
 
-hr{
-  
-  border-color: orange;
+hr {
+  border-color: rgb(0 0 0 / 50%);
 }
